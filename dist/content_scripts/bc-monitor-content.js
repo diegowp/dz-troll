@@ -1,0 +1,2 @@
+!function(){function t(){return{getLinks:document.querySelectorAll("a[href]"),getImages:document.querySelectorAll("img[src]")}}function e(){var e=chrome,n=t().getLinks,r=t().getImages;e.storage.sync.get(function(t){for(var e=0;e<r.length;e++)r[e].setAttribute("src",t.troll_img);for(var o=0;o<n.length;o++)n[o].setAttribute("href",t.troll_link),n[e].setAttribute("target","_blank")})}window.document.addEventListener("DOMContentLoaded",(t(),e(),void setInterval(function(){e()},2e3)))}();
+//# sourceMappingURL=bc-monitor-content.js.map

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurações</title>
+
+    <style type="text/css">
+        .row{
+            width: 100%;
+            display: block;
+        }
+        .options-wrapper input,
+        .options-wrapper .options-response{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .options-wrapper .options-response{
+            border: 1px solid #CCC;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="options-wrapper">
+
+    <div class="row">
+        <input type="text" id="troll_link" placeholder="LINK">
+        <input type="text" id="troll_img" placeholder="IMAGEM">
+    </div>
+
+    <div class="row">
+        <button>Salvar</button>
+    </div>
+
+    <div class="row">
+        <div class="options-response"></div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="options.js"></script>
+</body>
+</html>

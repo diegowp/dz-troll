@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "DZ Troll",
+  "version": "0.0.4",
+  "description": "Só de zoas xD",
+
+  "permissions": [
+    "<all_urls>",
+    "http://*/*",
+    "https://*/*",
+    "*://*/*",
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["dist/content_scripts/bc-monitor-content.js"]
+  }],
+
+  "options_ui":{
+    "page": "dist/options/options.html"
+  }
+
+}
